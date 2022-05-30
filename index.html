@@ -10,7 +10,9 @@
     <script type="text/javascript" src="valoresmaiores.js"></script> 
     <script type="text/javascript" src="aposentadoria.js"></script> 
     <script type="text/javascript" src="tabuada.js"></script>
-    <script type="text/javascript" src="media.js"></script> 
+    <script type="text/javascript" src="media.js"></script>
+    <script type="text/javascript" src="temperatura.js"></script> 
+    <script type="text/javascript" src="combustivel.js"></script> 
 </head>
 <body>
     <h2> Exercício 1 </h2> 
@@ -27,12 +29,46 @@
 
     <h1>Exercícios de Repetição</h1>
 
-    <h2> Exercício 1 </h2>
+    <h2> Exercício 5 </h2>
     <input type="button" value="Tabuada" onclick="Tabuada();">
 
-    <h2> Exercício 5 </h2>
+    <h2> Exercício 6 </h2>
     <input type="button" value="Média" onclick="Média();">
 
-
+    <h2> Exercício 7 </h2>
+<fieldset>
+    <legend>Conversão de Temperatura</legend>
+    
+    <label for="Centígrados">Centígrados</label>
+    <input type="number" id="Centígrados">
+    <br>
+    <br>
+    <label for="Fahrenheit">Fahrenheit: </label>
+    <input type="number" id="Fahrenheit">
+    <br>
+    <br>
+    <input type="button" value="Converter" onclick="ConverterTemperatura();">
+</fieldset>
+    
+    <h2> Exercício 8 </h2>
+<fieldset>
+    <legend>Cálculo de Litros de Combustivel</legend>
+    
+    <label for="Tempo">Tempo</label>
+    <input type="number" id="Tempo">
+    <br>
+    <br>
+    <label for="Velocidade">Velocidade: </label>
+    <input type="number" id="Velocidade">
+    <br>
+    <br>
+    <label for="Distância">Distância</label>
+    <input type="number" id="Distância">
+    <br>
+    <br>
+    <label for="Litros Usados">Litros Usados</label>
+    <input type="number" id="Litros Usados">
+    <input type="button" value="Converter" onclick="combustivel();">
+</fieldset>
 </body>
 </html>
